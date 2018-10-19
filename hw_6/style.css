@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    color: black;
+    font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+ul {
+    font-size: 25pt;
+    color: black;
+    font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+#sideBar{
+    width: 25vw;
+    height: 100vh;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#homePageImage{
+    width:  calc(75vw - 5px);
+    height: 100vh;
+    display: inline-block;
+    vertical-align: top;
+        overflow: hidden;
+}
+
+#coverImage{
+        height: 100%;
+}
+
+
+
+
+/*********** HEADER ************/
+
+header {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+h1 {
+    font-size: 50pt;
+    color: black
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    
+}
+
+li {
+    font-size: 25pt;
+    color: black;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    list-style: none;
+}
+
+.flex-items-headers {
+    font-size:25pt;
+/*    color: black;*/
+    text-decoration: none;
+}
+
+.flex-containers{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.flex-items{
+    padding: 10px;
+}
+
+menuBar {
+    div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+        margin: 6px 0;}
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  font-family: "Proxima Nova", sans-serif;
+  
+  overflow-x: hidden; 
+}
+
+a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: grey;
+}
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
+.cart-display {
+    position: absolute;
+    top:50px;
+    right:120px;
+}
+
+.cart-display img {
+    width: 40px;
+}
+
+.button {
+    background-color: cadetblue;
+    border: none;
+    color: black;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+
+.mp-content {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.mp-content-left {
+    height: 100px;
+    order:1;
+    flex: 1;
+    padding: 30px;
+}
+.mp-content-right {
+    height: 200px;
+    order:2;
+    width: 300px;
+    flex: initial; 
+    padding: 30px;
+}
+.cart-item {
+    padding: 30px;
+    background-color:#f6f6f6;
+}
+.cart-item img {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+}
+.cart-item p {
+    width: calc(100% - 300px);
+    display: inline-block;
+    vertical-align: top;
+    font-size: x-large;
+    padding: 0 15px;
+    margin: 0;
+}
+.cart-item input {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: xx-large;
+}
+.payment-things {
+    background-color:#f6f6f6;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+}
+.cart-payment {
+    
+}
