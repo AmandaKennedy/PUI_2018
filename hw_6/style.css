@@ -34,6 +34,8 @@ ul {
 
 /*********** HEADER ************/
 
+/*********** SHOPPING CART CODE MODIFIED FROM: https://codepen.io/erikterwan/pen/grOZxx
+ ************/
 header {
     text-align: center;
     padding: 10px;
@@ -299,14 +301,6 @@ a:hover
 .cart-payment {
     
 }
-
-/* cart style number 
-head div: 1
-cart image div: 2
-circle div: 3
-number div: 4
-
-*/
 
 
 .itemCount {

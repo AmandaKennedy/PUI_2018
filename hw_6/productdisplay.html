@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- javascript -->
     <script src="muddypaws.js"type="text/javascript"></script>
+   <body>
     <h1><li><a href="home.html">Muddy Paws</a></li></h1>
     <nav role='navigation'>
         <div id="head">
-        <div class="cart-display"> <a href="shoppingcart.html"><img src="hw_6_assetts/shopping-cart%20(1).jpg" alt="Shopping Cart"></a></div>
-        <div><span class="circle"></span></div>
+        <!-- cart image found here: https://thenounproject.com/search/?q=shopping%20cart&i=927424 -->
+        <div class="cart-display"> <img src="hw_6_assetts/shopping-cart%20(1).jpg" alt="Shopping Cart"></div>
+        <div><span class="circle" id="cart-count-badge"></span></div>
+         </div>
         <div><span id="itemCount"></span>
-        </div> 
         </div>
+        <!-- I modified the following code to create my hamburger menu: https://codepen.io/erikterwan/pen/grOZxx -->
         <div id="menuToggle">
             <input type="checkbox" />
             <span></span>
@@ -29,7 +31,9 @@
                 <a href="#">
                     <li>Shop Cat</li>
                 </a>
-                
+                <a href="wishlist.html">
+                    <li>Wish List</li>
+                </a>
                 <a href="#">
                     <li>Our Story</li>
                 </a>
@@ -39,9 +43,6 @@
             </ul>
         </div>
     </nav>
-</head>
-
-<body>
 
     <div class="flex-containers">
 

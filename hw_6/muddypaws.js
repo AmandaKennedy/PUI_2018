@@ -80,6 +80,8 @@ function updateCartIcon() {
 window.onload = function () {
     updateCartIcon();
     // gets value from the storage and then updates it. if there are items gets the input value on the page. assign to how many items are there.
+    
+    
 }
 
 var itemCount = 0;
@@ -96,25 +98,57 @@ $('.clear').click(function() {
 }); 
 
 
-
-
-
-
-
-
 //Shopping Cart arrays
 
-// var arrayquantitySelected = ["0","1","2","3","4","5"];
-//var arrayColorSelected = ["Crazyberry","Blackberry","Strawberry","Orangeberry"];
-// var arraySizeSelected = ["Extra Small", "Small", "Medium", "Large/Extra Large"];    
+{
+    
+var arrayquantitySelected = ["0","1","2","3","4","5"];
+var arrayColorSelected = ["Crazyberry","Blackberry","Strawberry","Orangeberry"];
+var arraySizeSelected = ["Extra Small", "Small", "Medium", "Large/Extra Large"]; 
 
+
+}
+var test;
+var cart;
 function renderCart()
 {
-    var cartString = localStorage.get("cart") | "[]";
-    var cart = JSON.parse(cartString);
+    var cartString = localStorage.getItem("cartString") || "[]";
+    cart = JSON.parse(cartString);
+    console.log(cart)
+    cart.forEach(function(cartItem) {
+        var row = document.createElement("tr");
+        var img1 = document.createElement("td");
+        console.log("cart item: " + cartItem["color"]);
+//        img1.innerHTML = "<p>Hello</p>";
+        img1.src =  "./hw_6_assetts/harness_"+cartItem["color"]+".jpg"
+        row.appendChild(img1);
+       
+//        console.log(row);
+//        var name = document.createElement("td");
+//        name.appendChild(this.color);
+//        name.innerHTML = this.color;
+//        row.appendChild(name);
+//        console.log("this color" + this.color);
+//        test = this.color;
+//        var quantity = document.createElement("td");
+//        quantity.innerHTML = this.quantity;
+//        row.appendChild(quantity);
+//        console.log(row);
+//        var color = document.createElement("td");
+//        color.innerHTML = this.color;
+//        row.appendChild(color);
+//        console.log(row);
+//        var size = document.createElement("td");
+//        size.innerHTML = this.size;
+//        row.appendChild(size);
+//        table.appendChild(row);
+//        console.log(row);
+        var tbl = document.getElementById("table");
+        tbl.appendChild(row);
+    });
     
-}
 
+}
 //add to wish list
 
 function addToWishList()
