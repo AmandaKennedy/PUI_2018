@@ -26,6 +26,9 @@ function addToCart()
     console.log('hello world console');
 
     // retrieve the user's preferences for item size, color, and quantity
+    var price = document.getElementById(priceDiv);
+    var priceVal = price.value;
+    
     var color = document.getElementById("colorDiv");
     var colorVal = color.value;
 
@@ -36,7 +39,7 @@ function addToCart()
     var sizeVal = size.value;
     var cartArray=getCartItems();
     for(var i = 0; i < quantityVal; i++) {
-        obj = { color: colorVal, size: sizeVal, quantity: 1};
+        obj = { price: priceVal, color: colorVal, size: sizeVal, quantity: 1};
         cartArray.push(obj);   
     }
 
@@ -117,37 +120,40 @@ function renderCart()
     console.log(cart)
     cart.forEach(function(cartItem) {
         var row = document.createElement("tr");
-        var img1 = document.createElement("td");
-        console.log("cart item: " + cartItem["color"]);
-//        img1.innerHTML = "<p>Hello</p>";
-        img1.src =  "./hw_6_assetts/harness_"+cartItem["color"]+".jpg"
-        row.appendChild(img1);
-       
-//        console.log(row);
-//        var name = document.createElement("td");
-//        name.appendChild(this.color);
-//        name.innerHTML = this.color;
-//        row.appendChild(name);
-//        console.log("this color" + this.color);
-//        test = this.color;
-//        var quantity = document.createElement("td");
-//        quantity.innerHTML = this.quantity;
-//        row.appendChild(quantity);
-//        console.log(row);
-//        var color = document.createElement("td");
-//        color.innerHTML = this.color;
-//        row.appendChild(color);
-//        console.log(row);
-//        var size = document.createElement("td");
-//        size.innerHTML = this.size;
-//        row.appendChild(size);
-//        table.appendChild(row);
-//        console.log(row);
+        console.log("cart item: " + cartItem["color"]);       
+        var name = document.createElement("td");
+        name.appendChild(this.color);
+        name.innerHTML = this.color;
+        row.appendChild(name);
+        console.log("this color" + this.color);
+        test = this.color;
+        var quantity = document.createElement("td");
+        quantity.innerHTML = this.quantity;
+        row.appendChild(quantity);
+        var color = document.createElement("td");
+        color.innerHTML = this.color;
+        row.appendChild(color);
+        var size = document.createElement("td");
+        size.innerHTML = this.size;
+        row.appendChild(size);
+        table.appendChild(row);
         var tbl = document.getElementById("table");
         tbl.appendChild(row);
     });
     
 
+}
+function addPic() {
+    var img1 = new Image();
+    img1.src = "./hw_6_assetts/harness_"+cartItem["color"]+".jpg"
+    document.body.appendChild(img1);
+}
+
+function init() {
+    var btn = document.createElement('button');
+    btn.innerText = 'click me!';
+    btn.onclick = addPic;
+    document.body.appendChild(btn);
 }
 //add to wish list
 
@@ -157,3 +163,9 @@ function addToWishList()
     console.log('hello world console');
     
 }
+  //Since I ran out of time, the following would be my next steps:
+    // 1. I tried incorporating the branch code, but then the renderCart function stopped working. I got an error message in my console that says "shoppingcart.html:82 Uncaught ReferenceError: renderCart is not defined at shoppingcart.html:82" I obviously did something wrong, but I have not been able to figure out what I did. I would try to find the source of the problem.
+//          1a. Then, I would keep working on the renderCart function so that items  in                 my cart show up on my cart page.
+    // 2. Currently, the total items price on my shopping cart price is statically set at $50.00 I started working with the code that would dynamically change the total price, with inspiration from this Stack Overflow post: https://stackoverflow.com/questions/26961015/dynamic-updating-of-prices-with-multiple-options, but I realized that the price of each item I have in my cart is not set in local storage. I would work adding the price into local storage. I tried adding the following lines, but it did not carry the price over to local storage: 
+        //
+    // 3. I would also try to work on code that allows the user to delete items in their cart.
