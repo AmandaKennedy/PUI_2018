@@ -116,9 +116,7 @@ a:hover
   position: absolute;
   top: 50px;
   right: 50px;
-  
-  z-index: 1;
-  
+    
   -webkit-user-select: none;
   user-select: none;
 }
@@ -135,7 +133,6 @@ a:hover
   cursor: pointer;
   
   opacity: 0; 
-  z-index: 2; 
   
   -webkit-touch-callout: none;
 }
@@ -329,6 +326,7 @@ a:hover
     position: absolute;
 }
 
+/* Z-index help found here: https://www.w3schools.com/cssref/pr_pos_z-index.asp */ 
 }
 .head {
   z-index: 0;
