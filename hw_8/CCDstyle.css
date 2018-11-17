@@ -1,0 +1,240 @@
+header {
+     padding: 20px;
+}
+ header h3 {
+     display: inline-block;
+     margin: 0px;
+     float: right;
+     line-height: 55pt;
+     word-spacing: 30px;
+     color: darkblue;
+}
+ header h1 {
+     margin: 0px;
+     display: inline-block;
+     line-height: 40pt;
+     color: darkblue;
+}
+
+
+ h1 {
+     color: darkblue;
+     font-size: 35pt;
+     font-family: 'Proxima Nova Bold', sans-serif;
+     text-decoration: none;
+}
+ h3 {
+     color: darkblue;
+     font-size: 15pt;
+     font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+ a {
+     color: darkblue;
+     font-family: 'Proxima Nova Bold', sans-serif;
+     list-style: none;
+     text-decoration: none;
+}
+
+body {
+    margin: 0px;
+}
+
+/* I modified the following code for my hero from W3schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image */
+ #hero{
+    display: inline-block;
+    background-size: cover;
+    background-color: darkblue;
+    height: 500px;
+    width: 1600px;
+    /*height: 150vh;
+    width: 100vw;*/
+}
+ #hero-text{
+     font-size: 40px;
+     font-family: 'Proxima Nova Bold', sans-serif;
+     color: white;
+     text-align: left;
+     width: 50vw;
+     height: 100%;
+     display: inline-block;
+     /*padding-top: calc(75vh - 30pt);*/
+     padding-top: 200px;
+     padding-left: 40px;
+}
+
+
+ #hero-image{
+     padding: 20px;
+     height: 100%;
+     display: inline-block;
+     vertical-align: top;
+     overflow: hidden;
+     width: calc(50vw - 45px);
+     text-align: center;
+}
+#hero-image img {
+    height: 100%;
+}
+
+body h3 {
+     color: darkblue;
+     font-size: 20pt;
+     font-family: 'Proxima Nova Bold', sans-serif;
+     padding-left: 40px;
+     padding-right: 40px;
+     /*text-decoration: underline darkblue;*/
+}
+
+.underline {
+    border-bottom: 5px solid darkblue; 
+}
+
+ p{
+     padding-left:40px;
+     padding-right:40px;
+     font-size: 15pt;
+     font-family: 'Proxima Nova Bold', sans-serif;
+     
+}
+
+li{
+     font-size: 15pt;
+     font-family: 'Proxima Nova Bold', sans-serif;
+     padding-left: 50px;
+     padding-right: 50px;
+    
+}
+
+caption {
+    font-size: 10pt;
+    font-family: 'Proxima Nova Bold', sans-serif;  
+}
+
+/* image animations modified from this code: http://dabblet.com/gist/1991345 */
+
+.pinpoint {
+	width: 400px;
+	height: 200px;
+	background-image: url("hw8_assetts/CCD_discover.svg");
+	background-repeat: no-repeat;
+    background-size: cover;
+	transition: background-image 1s;
+    
+}
+
+/* one id for each of the six pics; 
+move backgorund imag into id (specific stuff) and general stuff in a class, everything in round courners can be moved into a class (image container) */
+
+.pinpoint:hover {
+	background-image: url("hw8_assetts/CCD_discover_animate.svg");
+}
+
+/* I modified the following code from w3schools for my buttons: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate1 */
+ 
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: darkblue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: white;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* I modified the following code for #wrapper: http://jsfiddle.net/loktar/cynbp3j0/ */
+#wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* homepage icon borders—code modified from W3Wchools:*/ 
+
+#rcorners1 {
+    border-radius: 25px;
+    border: 2px solid lightgrey;
+    padding: 20px; 
+            
+}
+
+.flex-containers{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.flex-items{
+    padding: 10px;
+}
+
+/*Contact Us Form */
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    font-size: 10pt;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+label {
+     font-size: 15pt;
+     font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+
+/* Pagination code modified from Stack Overflow: https://stackoverflow.com/questions/33277777/css-circle-with-border */
+
+.dot {
+    background-color: lightgray;
+    border: 1px solid dimgrey;
+    height:25px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:25px;
+    display: inline-block;
+}
