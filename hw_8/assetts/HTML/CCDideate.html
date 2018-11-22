@@ -3,8 +3,9 @@
 
 <head>
     <!-- metatag: html viewport; media query set a width for these set of rules when you get between x and y-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!-- styles -->
-    <link rel="stylesheet" type="text/css" href="CCDstyle.css">
+    <link rel="stylesheet" type="text/css" href=../CSS/CCDstyle.css>
 </head>
 
 <body>
@@ -27,13 +28,20 @@
         <span class="dot"></span>
     </div>
     <!--Step One -->
+    <div id="hero">
+        <div id="hero-text">
+            Step One: Pinpoint the Problem
+        </div>
+        <!--Hero Image Icone Taken From Noun Project: https://thenounproject.com/search/?q=city%20hall&i=455437 -->
+        <div id="hero-icon"><img src="../images/CCD_discover.svg", alt="Pinpoint"></div>
+    </div>
     <div><h3 class="underline">Step One: Pinpoint the Problem</h3>
     <p>Decide which service your team of government employees needs to improve. Qualitative and/or quantitative evidence can help you here: leverage your 311 call center reports, web site analytics, and even social media to understand how services within your department could better serve your citizens. Set up conversations with folks within your department to understand their point of view and how they impact the service delivery.</p>
 
     <p>Use our matrix worksheet to keep track of the various service breakdowns that you uncover and decide which service to focus on.</p>
-    <div id="wrapper">
-        <button class="button" style="vertical-align:middle"><span>Download Matrix Worksheet </span></button>
-    </div>
+        <!--I used code from W3Schools: https://www.w3schools.com/howto/howto_html_download_link.asp and Stack Overflow: https://stackoverflow.com/questions/16925481/opening-a-new-tab-to-read-a-pdf-file to configure the worksheet downloads on this page that open the worksheets into new tabs -->
+        
+        <div id="wrapper"><button class="button" style="vertical-align:middle"><a href=hw8_worksheets/Worksheet%201_%20Pinpoint%20the%20Problem.pdf download target="_blank"><span>Download Decision Matrix Worksheet</span></a></button></div>
     </div>
     <!--Step Two -->
     <div><h3 class="underline">Step Two: Learn About Your Citizens</h3>
@@ -44,8 +52,10 @@
             <li><strong>Service Backstage Employees</strong> work in the background of your service's agency and do not interact directly with end users of your service. </li>
             <li><strong>Service Frontstage Employees</strong> work within your government service agency and interact directly with users of your service. </li>
         </ui>
-    <p>Set up 45- to 60-minute individual interviews with at least 5 stakeholders from each of the above groups in order to get a full picture of how they interact with your service. Ask open-ended, non-leading questions, and ask follow-up questions like, “Can you elaborate on that?” Have them get as specific as possible. Ask them to tell stories: “Can you tell me about the last time you did_____?” “Can you walk me through ______?”</p>
-    <p>Invite a colleague to accompany you to the interview and take notes. </p>
+    <p>Set up 45- to 60-minute individual interviews with at least 2-3 stakeholders from each of the above groups in order to get a full picture of how they interact with your service. Ask open-ended, non-leading questions. So instead of asking “Do use public transportation to get around the city?”, which can lead to a simple “Yes” or “No” answer, or instead of asking “What is it like to ride the Port Authority bus?”, which assumes that your participant does ride the Port Authority bus, you could reformulate your questions to ask: “Can you tell me about the forms of transportation that you used to get around the city in the past week?” This question can lead to more specific and fruitful answers.</p>
+    <p>Ask follow-up questions like, “Can you elaborate on that?” Have them get as specific as possible. Ask them to tell stories: “Can you tell me about the last time you did_____?” “Can you walk me through ______?” Through these interviews, you should be able to uncover needs, pain points, goals, opportunities, and meaningful stories that can help guide you to develop a solution that serves these stakeholders’ needs.</p>
+    <p>So that you can focus on the participant, invite a colleague to accompany you to take notes. If none of your colleagues are available, you could bring along a recording device, but make sure to ask for the participant’s permission before starting the recording. </p>
+    <p>Use our interview and note-taking template to help you prepare for interviewing your citizens.</p>
      <div id="wrapper">
         <button class="button" style="vertical-align:middle"><span>Download Interview Worksheet </span></button>
     </div>
