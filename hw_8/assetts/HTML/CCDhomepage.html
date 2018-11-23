@@ -11,16 +11,31 @@
 </head>
 <body>
     <!-- Navigation -->
-<div class="row">
-<header id="navbar">
-    <h1><a href="CCDhomepage.html">Citizen-Centered Design</a></h1>
-    <h3><div align=right>
-        <a href="CDCabout.html">About</a> 
-        <a href="CCDideate.html">Toolkit</a>
-        <a href=database-intro.html>Database </a>
-        <a href="CDCcontact.html">Contact</a></div></h3>
-</header>
-</div>
+ <!-- I modified the following code to create my hamburger menu: https://codepen.io/erikterwan/pen/grOZxx -->
+    <header>
+        <h1><a href="CCDhomepage.html">Citizen-Centered Design</a></h1>
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="CDCabout.html">
+                    <li>About</li>
+                </a>
+                <a href="CCDideate.html">
+                    <li>Toolkit</li>
+                </a>
+                <a href="database-intro.html">
+                    <li>Database</li>
+                </a>
+
+                <a href="CDCcontact.html">
+                    <li>Contact </li>
+                </a>
+            </ul>
+        </div>
+    </header>
     <!-- Hero Image -->
     <div id="hero">
         <div id="hero-text">
@@ -41,7 +56,7 @@
         <div class="flex-items">
             <div class="pinpoint" id="rcorners1"></div>
             <div id="wrapper">
-                <button class="button" style="vertical-align:middle"><a href=CCDideate.html><span>Pinpoint</span></a></button>
+                <button class="button" style="vertical-align:middle"><a href="CCDideate.html"><span>Pinpoint</span></a></button>
     </div>
         </div>
           <div class="flex-items">
@@ -82,6 +97,9 @@
    <!-- </div> -->
 
 </body>
-
+<div class="footer">
+    <p> Citizen-Centered Design</p>
+    
+</div>
 </html>
 

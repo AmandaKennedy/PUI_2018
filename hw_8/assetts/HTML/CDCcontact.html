@@ -11,16 +11,34 @@
 </head>
     
 <!-- Navigation -->
-<header>
-    <h1><a href="CCDhomepage.html">Citizen-Centered Design</a></h1>
-    <h3><div align=right>
-        <a href="CDCabout.html">About</a>
-        <a href="CCDideate.html">Toolkit</a>
-        <a href=database-intro.html>Database </a>
-        <a href="CDCcontact.html">Contact</a></div></h3>
-</header>
+<div class="row">
+ <!-- I modified the following code to create my hamburger menu: https://codepen.io/erikterwan/pen/grOZxx -->
+    <header>
+        <h1><a href="CCDhomepage.html">Citizen-Centered Design</a></h1>
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="CDCabout.html">
+                    <li>About</li>
+                </a>
+                <a href="CCDideate.html">
+                    <li>Toolkit</li>
+                </a>
+                <a href="database-intro.html">
+                    <li>Database</li>
+                </a>
 
-<!--Contact Us PAge-->
+                <a href="CDCcontact.html">
+                    <li>Contact </li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+<!--Contact Us Page-->
 <body>
     <h3 class="underline">Contact Us</h3>
     <p>To get in touch with Citizen-Centered Design, please reach out via the form below.</p>
