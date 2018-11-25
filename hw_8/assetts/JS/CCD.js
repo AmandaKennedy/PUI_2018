@@ -1,30 +1,43 @@
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
-
-// Get the navbar
-var navbar = document.getElementById("navbar");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
 
 // Contact Us Page: Form Submission //
 
-let form = document.createElement('form');
-form.action = 'https://google.com/search';
-form.method = 'GET';
-
-form.innerHTML = '<input name="q" value="test">';
-
-// the form must be in the document to submit it
 function formSubmit() {
-    alert("The form was submitted");
+    var elmnt = document.createElement("form");
+    var textnode = document.createTextNode("Your message has been submitted.");
+    elmnt.appendChild(textnode);
+
+    var item = document.getElementById("container");
+    item.replaceChild(elmnt, item.childNodes[0]);
 }
+
+//Footer Animation//
+
+let xs = []
+for (var i = 0; i <= 500; i++) {
+  xs.push(i)
+}
+
+let t = 0
+
+function animate() {
+  
+  let points = xs.map(x => {
+    
+    let y = 200 + 20 * Math.sin((x + t) / 10)
+    
+    return [x, y]
+  })
+  
+  let path = "M" + points.map(p => {
+    return p[0] + "," + p[1]
+  }).join(" L")
+  
+  document.querySelector("path").setAttribute("d", path)
+  
+  t += 0.5
+  
+  requestAnimationFrame(animate)
+}
+
+//animate()
+

@@ -15,6 +15,10 @@
         padding: 20px;
         width: calc(50vw - 84px);
     }
+    #rcorners1 {
+        height: 40vh;
+
+    }
     
 }
 
@@ -37,6 +41,10 @@
     #hero-icon {
         padding: 5px;
         width: calc(50% - 24px);
+    }
+    
+    #rcorners1 {
+        height: 70vh;
     }
     
 }
@@ -269,6 +277,10 @@ body {
      padding-top: 350px;
 }
 
+#hero-text a
+{
+  color: white;
+}
 
  #hero-icon{
      height: 100%;
@@ -324,7 +336,6 @@ caption {
     border: 2px solid lightgrey;
     padding: 20px;
     width: calc(100% - 44px);
-    height: 30vw;
             
 }
 
@@ -492,7 +503,7 @@ move backgorund imag into id (specific stuff) and general stuff in a class, ever
     display: inline-block;
 }
 
-/*Contact Us Form */
+/*Contact Us Form, modified from W3schools: https://www.w3schools.com/howto/howto_css_contact_form.asp*/
 /* * {box-sizing: border-box;}*/
 
 input[type=text], select, textarea {
@@ -514,7 +525,7 @@ label {
 }
 
 .container {
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #f2f2f2;
     padding: 50px;
 }
@@ -553,3 +564,15 @@ label {
    background-color: #111D4A;
    color: white;
    text-align: center;
+}
+svg {
+  width: 600px;
+  height: 400px;
+}
+
+path {
+  stroke: #111D4A;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  fill: none;
+}
