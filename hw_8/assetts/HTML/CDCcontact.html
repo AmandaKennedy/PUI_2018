@@ -43,7 +43,7 @@
     <h3 class="underline">Contact Us</h3>
     <p>To get in touch with Citizen-Centered Design, please reach out via the form below.</p>
 
-    <div class="container">
+    <div id="myForm" class="container">
         <form action="">
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name">
@@ -60,16 +60,24 @@
             <label for="subject">Message</label>
             <textarea id="subject" name="subject" placeholder="Write something" style="height:200px"></textarea>
         <div id="wrapper">
-                <button onclick="formSubmit()" class="button" style="vertical-align:middle" onclick="formSubmit()"><span>Submit </span></button>
+                <button onclick="formSubmit()" class="button" style="vertical-align:middle"><span>Submit </span></button>
             </div>
         </form>
         </div>
    
 </body>
 <!-- Footer -->
-<div class="footer">
+<svg>
+        <path d="M10,10 L50,100 L90,50"></path>
+    </svg>
+<div class="footer" onscroll="animate()">
     <p> Citizen-Centered Design</p>
-
+    <div id="flex-items">
+    <a href="CDCabout.html">About</a>
+    <a href="CCDideate.html">Toolkit</a>
+    <a href="database-intro.html">Database</a>
+    <a href="CDCcontact.html">Contact</a>
+    </div>
+         
 </div>
-
 </html>

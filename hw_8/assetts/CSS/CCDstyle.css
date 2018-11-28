@@ -1,4 +1,4 @@
-/*media query code from W3Schools: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints */
+/*media query code from W3Schools. Also got a little help from Mary Beth: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints */
 
 /* For desktop: */
 /* For desktop: */
@@ -7,6 +7,10 @@
         width: 30%;
         
     }
+    #about {
+        width: 60%;
+    }
+
     #hero-text {
         font-size: 40px;
         padding-left: 40px;
@@ -68,7 +72,7 @@
   overflow-x: hidden;
 }
 
-a
+#menutoggle a
 {
   text-decoration: none;
   color: #232323;
@@ -77,7 +81,7 @@ a
   transition: color 0.3s ease;
 }
 
-a:hover
+#menutoggle a:hover
 {
   color: lightgrey;
 }
@@ -112,9 +116,6 @@ a:hover
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
 #menuToggle span
 {
   display: block;
@@ -252,6 +253,7 @@ header {
      font-family: 'Proxima Nova Bold', sans-serif;
      list-style: none;
      text-decoration: none;
+     padding: 10px;
 }
 
 body {
@@ -565,9 +567,10 @@ label {
    color: white;
    text-align: center;
 }
+
 svg {
-  width: 600px;
-  height: 400px;
+  width: 100vw;
+  height: 200px;
 }
 
 path {
@@ -576,3 +579,4 @@ path {
   stroke-linecap: round;
   fill: none;
 }
+
