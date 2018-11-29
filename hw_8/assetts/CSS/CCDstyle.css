@@ -20,7 +20,7 @@
         width: calc(50vw - 84px);
     }
     #rcorners1 {
-        height: 40vh;
+        height: 55vh;
 
     }
     
@@ -48,7 +48,7 @@
     }
     
     #rcorners1 {
-        height: 70vh;
+        height: 90vh;
     }
     
 }
@@ -85,6 +85,7 @@
 {
   color: lightgrey;
 }
+
 
 #menuToggle
 {
@@ -216,6 +217,8 @@
 
 /* end of codepen code */
 
+/*text styles*/
+
 
 header {
      padding: 20px;
@@ -258,6 +261,9 @@ header {
 
 body {
     margin: 0px;
+    width: 100vw;
+    overflow-x: hidden;
+
 }
 
 /* I modified the following code for my hero from W3schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image */
@@ -266,17 +272,16 @@ body {
     background-size: cover;
     background-color: #5941A9;
     height: 80vh;
-    width: 100vw;
+    max-width: 100vw;
 }
  #hero-text{
-     font-family: 'Proxima Nova Bold', sans-serif;
-     color: white;
-     text-align: left;
-     width: 50vw;
-     height: 100%;
-     display: inline-block;
-     /*padding-top: calc(75vh - 30pt);*/
-     padding-top: 350px;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    color: white;
+    text-align: left;
+    width: 50vw;
+    height: 100%;
+    display: inline-block;
+    padding-top: calc(45vh - 30pt);
 }
 
 #hero-text a
@@ -552,7 +557,7 @@ label {
     margin-bottom: 20px;
 }
 
-/*Footer code modified from W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_footer */
+/*Footer code modified from W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_footer  and a codepen by Rik: https://codepen.io/riklomas/pen/erKJoN*/
 .footer {
    position: static;
    left: 0;

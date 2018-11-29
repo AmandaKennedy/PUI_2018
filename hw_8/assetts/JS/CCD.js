@@ -12,7 +12,8 @@ function formSubmit() {
     item.replaceChild(elmnt, item.children[0]);
 }
 
-//Footer Animation modified from //
+
+//Footer Animation modified from https://codepen.io/anon/pen/RqYYgz and some help from Mary Beth//
 
 let xs = []
 let maxW = window.innerWidth
@@ -42,9 +43,9 @@ function animate() {
   requestAnimationFrame(animate)
 }
 
+
 // Window onLoad Function; put click handlers first //
 
 window.onload = function() {
     animate();
-    
     };
