@@ -43,7 +43,6 @@ function animate() {
   requestAnimationFrame(animate)
 }
 
-
 // Window onLoad Function; put click handlers first //
 
 window.onload = function() {
