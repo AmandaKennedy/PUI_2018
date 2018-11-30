@@ -109,7 +109,7 @@
   
   background: #232323;
   color: #cdcdcd;
-  font-family: "Proxima Nova Bold", sans-serif;
+  font-family: lato-light,lato,sans-serif;
   
   overflow-x: hidden;
 }
@@ -118,7 +118,7 @@
 {
   text-decoration: none;
   color: #232323;
-  font: 'Proxima Nova Bold', sans-serif;
+  font: lato-light,lato,sans-serif;
   
   transition: color 0.3s ease;
 }
@@ -284,18 +284,18 @@ header {
  h1 {
      color: #8789C0;
      font-size: 35pt;
-     font-family: 'Proxima Nova Bold', sans-serif;
+     font-family: lato-light,lato,sans-serif;
      text-decoration: none;
 }
  h3 {
      color: #8789C0;
      font-size: 15pt;
-     font-family: 'Proxima Nova Bold', sans-serif;
+     font-family: lato-light,lato,sans-serif;
 }
 
  a {
      color: #8789C0;
-     font-family: 'Proxima Nova Bold', sans-serif;
+     font-family: lato-light,lato,sans-serif;
      list-style: none;
      text-decoration: none;
      padding: 10px;
@@ -317,7 +317,7 @@ body {
     max-width: 100vw;
 }
  #hero-text{
-    font-family: 'Proxima Nova Bold', sans-serif;
+    font-family: lato-light,lato,sans-serif;
     color: white;
     text-align: left;
     width: 50vw;
@@ -347,7 +347,7 @@ body {
 body h3 {
      color: #5941A9;
      font-size: 20pt;
-     font-family: 'Proxima Nova Bold', sans-serif;
+     font-family: lato-light,lato,sans-serif;
      padding-left: 40px;
      padding-right: 40px;
      /*text-decoration: underline #426AC7;*/
@@ -361,13 +361,13 @@ body h3 {
      padding-left:40px;
      padding-right:40px;
      font-size: 15pt;
-     font-family: 'Proxima Nova Bold', sans-serif;
+     font-family: lato-light,lato,sans-serif;
      
 }
 
 li{
      font-size: 15pt;
-     font-family: 'Proxima Nova Bold', sans-serif;
+     font-family: lato-light,lato,sans-serif;
      padding-left: 50px;
      padding-right: 50px;
     
@@ -375,7 +375,7 @@ li{
 
 caption {
     font-size: 10pt;
-    font-family: 'Proxima Nova Bold', sans-serif;  
+    font-family: lato-light,lato,sans-serif;  
 }
 
 /* homepage icon borders—code modified from W3Wchools:*/ 
@@ -385,8 +385,8 @@ caption {
     border: 2px solid lightgrey;
     padding: 20px;
     width: calc(100% - 44px);
-            
 }
+            
 
 /* image animations modified from this code: http://dabblet.com/gist/1991345 */
 
@@ -399,6 +399,7 @@ caption {
 	background-repeat: no-repeat;
     background-size: cover;
 	transition: background-image 1s;
+    z-index: 1;
     
 }
 
@@ -409,6 +410,7 @@ move backgorund imag into id (specific stuff) and general stuff in a class, ever
 
 .pinpoint:hover {
 	background-image: url("../images/CCD_discover_animate.svg");
+    z-index: 1;
 }
 
 /* Learn Image and Animation: Icone From The Noun Project: https://thenounproject.com/icon/344970/ */
@@ -557,7 +559,7 @@ move backgorund imag into id (specific stuff) and general stuff in a class, ever
 
 input[type=text], select, textarea {
     font-size: 10pt;
-    font-family: 'Proxima Nova Bold', sans-serif;
+    font-family: lato-light,lato,sans-serif;
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -570,7 +572,7 @@ input[type=text], select, textarea {
 
 label {
      font-size: 15pt;
-     font-family: 'Proxima Nova Bold', sans-serif;
+     font-family: lato-light,lato,sans-serif;
 }
 
 .container {
@@ -578,66 +580,6 @@ label {
     background-color: #f2f2f2;
     padding: 50px;
 }
-
-/* vertical breadcrumbs code modified from stackoverflow: https://stackoverflow.com/questions/36929965/creating-css-circles-connected-with-lines-vertical-and-horizontal */
-
-.breadcrumbs {
-    
-}
-
-.breadcrumbs ul {
-  list-style: none;
-  margin: 50px;
-  padding: 0;
-  font: normal 16px/22px Arial;
-  color: #999;
-  position: fixed;
-
-}
-.breadcrumbs li {
-  overflow: hidden;
-  position: relative;
-  padding: 0 0 10px 35px;
-  }
-  .breadcrumbs li::before {
-    content: '';
-    position: absolute;
-    left: 9px;
-    top: 9px;
-    width: 20px;
-    height: 999px;
-    border: 2px solid lightblue;
-    border-width: 2px 0 0 2px;
-    }
-    .breadcrumbs li:last-child::before {
-      border-width: 2px 0 0;
-      }
-  .breadcrumbs li::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 16px;
-    height: 16px;
-    background: #fff;
-    border: 2px solid lightblue;
-    border-radius: 50%;
-    }
-  .breadcrumbs li.current,
-  .breadcrumbs li.passed {
-    color: #000;
-    }
-    .breadcrumbs li.current::before {
-      border-top-color: dodgerblue;
-      }
-    .breadcrumbs li.current::after {
-      border-color: dodgerblue;
-      background: dodgerblue;
-      }
-    .breadcrumbs li.passed::before,
-    .breadcrumbs li.passed::after {
-      border-color: dodgerblue;
-      }
 
 /* Database class */
 .database {
@@ -647,6 +589,10 @@ label {
 }
 
 /*Footer code modified from W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_footer  and a codepen by Rik: https://codepen.io/riklomas/pen/erKJoN*/
+
+.footcolor {
+    background: #FAFAFA
+}
 .footer {
    position: static;
    left: 0;
